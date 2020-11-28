@@ -1,0 +1,68 @@
+@import '../../scss/variables';
+
+.radio {
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  span {
+    cursor: pointer;
+    vertical-align: middle;
+    letter-spacing: 0.7px;
+    font-weight: $font-weight-light;
+  }
+
+  &.active {
+    > label {
+      > span {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .radio-button {
+    display: inline-block;
+    transition: border-color 0.2s ease;
+    margin: 0 10px 0 0;
+    border: 7px solid $dark-gray;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+
+    &:hover,
+    &.active {
+      border-color: $primary-color;
+      border: 7px solid #00ABFD;;
+    }
+
+  }
+
+  &.big {
+    .radio-button {
+      width: 30px;
+      height: 30px;
+      &.active {
+        border: 10px solid #00ABFD;
+      }
+    }
+  }
+
+  &.disabled {
+    .radio-button {
+      opacity: 0.6;
+      cursor: not-allowed;
+
+      &:hover {
+        border-color: $dark-gray;
+      }
+
+      &.active {
+        border-color: $primary-color;
+      }
+    }
+  }
+}

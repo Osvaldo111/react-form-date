@@ -1,0 +1,119 @@
+
+$columns: 12;
+$susy: (
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 1200px,
+  columns: $columns,
+  gutters: .45,
+  global-box-sizing: border-box,
+);
+
+$body-bg:                #fafbfc;
+$sidenav-color:          #0b2843;
+$primary-color:          #3f80be;
+$primary-color-alt:      #4a90e2;
+$primary-color-hover:    #0d6c94;
+$info-color:             #00ABFD;
+$info-color-alt:         #00cbda;
+$success-color-light:    #44c95b;
+$success-color:          #2AC552;
+$success-color-dark:     #31953a;
+$error-color:            #D83418;
+$error-color-light:      #D83418;
+$warning-color:          #e68127;
+$warning-color-alt:      #ffad2b;
+
+$purpley-color:          #7a69e6;
+$aqua-color:             #17ebd9;
+$gold-color:             #ffcf56;
+$salmon-color:           #f95e5e;
+
+$white:                  #fff;
+$light-gray:             #f2f6fa;
+$lighter-gray:           #f6f6f7;
+$lightest-gray:          #f9f9fb;
+$background-gray:        #f0f2f5;
+$base-gray:              #58595b;
+$dark-gray:              #d4d4d6;
+$darker-gray:            #676c67;
+$black:                  #282c36;
+$black-gray:             #3b3f3b;
+$black-gray-light:       #9b9b9b;
+
+$ui-border:              $base-gray;
+$ui-light-border:        #eaeaea;
+$shadow:                 rgba(0, 0, 0, .1);
+$shadow-light:           rgba(0, 0, 0, .05);
+$tooltip-color:          rgba(0,0,0,.7);
+
+$font-family:            'Exo 2', sans-serif;
+$font-size-large:        18px;
+$font-size:              16px;
+$font-size-small:        14px;
+$font-size-tiny:         12px;
+$text-color:             $black-gray;
+$text-color-light:       $black-gray-light;
+$success-text-color:     $success-color;
+$error-text-color:       $error-color-light;
+$font-weight-light:      300;
+$font-weight-normal:     400;
+$font-weight-medium:     500;
+$font-weight-semibold:   600;
+$font-weight-bold:       700;
+
+$title-color:            $darker-gray;
+$title-color-alt:        $primary-color;
+$title-font-family:      $font-family;
+$title-font-weight:      300;
+$title-font-size:        28px;
+$title-font-size-lg:     24px;
+
+$button-font-size:       14px;
+$button-border-radius:   2px;
+$button-height:          50px;
+$border-button-unstyled: #9b9b9b;
+
+$select-font-size:       14px;
+$select-border-radius:   2px;
+$select-height:          45px;
+$select-width:           180px;
+
+$screen-xs:              480px;
+$screen-sm:              768px;
+$screen-lg:              1024px;
+$screen-xl:              1280px;
+
+$transition-speed:       .2s;
+$z-index-dropdown:       999;
+
+$app-header-height:      90px;
+$app-header-sm-height:   174px;
+$app-header-xs-height:   122px;
+$nav-width-lg:           217px;
+$nav-width-sm:           0px;
+$nav-mobile-height:      86px;
+$nav-mobile-xs-height:   54px;
+$nav-mobile-width-sm:    245px;
+$nav-mobile-width-xs:    208px;
+$nav-user-menu-width-sm: 246px;
+$nav-user-menu-width-xs: 208px;
+
+$header-z-index:         9;
+$nav-z-index:            8;
+
+$panel-card-sm-height: 423px;
+
+:export {
+  screen_xl: 1280;
+  screen_lg: 1024;
+  screen_sm: 768;
+  screen_xs: 480;  
+  panel_card_sm_height:  423;
+  app_header_height:      $app-header-height;
+  app_header_sm_height:   $app-header-sm-height;
+  app_header_xs_height:   $app-header-xs-height;
+  app_margin_top: 46;
+  app_margin_top_sm: 16;
+}
