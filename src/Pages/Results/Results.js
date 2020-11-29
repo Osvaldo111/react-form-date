@@ -1,10 +1,10 @@
 import React from "react";
 import classnames from 'classnames';
 import { connect } from "react-redux";
+import goBackImg from '../../assets/back-button.svg'
 
 import { 
-  TextField,
-  RadioButton,
+  Icon,
   Button 
 } from '../../components'
 import {
@@ -45,15 +45,23 @@ class Results extends React.Component {
     return (
       <div className="results">
         <div className={`container` + ' ' + stylenames}>
+          <Icon 
+            src={goBackImg}
+            type="go-back-btnn"
+            height={50}
+            width={50}
+            onClick={() => history.replace('/')}
+            className="back-bttn"
+          />
+          <div className="date">Your date: <span>{date}</span></div>
+          <div className="message">Your Message: <span>{message}</span></div>
           <Button 
             id="back-bttn"
             color={buttonType}
-            onClick={() => history.replace('/')}
+            onClick={() => window.location.href = "https://github.com/Osvaldo111/react-form-date"}
           >
-            {'Go Back'}
+            {'Review code on GitHub'}
           </Button>
-          <div>Your date: <span>{date}</span></div>
-          <div>Confirm Message: <span>{message}</span></div>
         </div>
       </div>
     );

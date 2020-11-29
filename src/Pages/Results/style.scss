@@ -16,6 +16,12 @@
         padding: 24px 24px 52px;
         min-width: 750px;
 
+        .date,
+        .message,
+        .back-bttn {
+            margin-bottom: 15px;
+        }
+
         &.classic {
             background-color: #d8d8d8;
             font-style: italic;
